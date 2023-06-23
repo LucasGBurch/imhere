@@ -29,17 +29,21 @@ export function Home() {
   }
 
   function handleParticipantRemove(name: string) {
+    // console.log(participants.filter(participant => participant !== name));
     Alert.alert('Remover', `Remover o participante ${name}?`, [
       {
         text: 'Sim',
-        onPress: () => Alert.alert('Deletado.'),
+        onPress: () =>
+          setParticipants((prevState) =>
+            prevState.filter((participant) => participant !== name)
+          ),
+        style: 'destructive',
       },
       {
         text: 'Não',
         style: 'cancel',
       },
     ]);
-
     //  console.log(`Botão - de ${name} clicado`);
   }
 
