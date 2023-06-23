@@ -45,6 +45,7 @@ export function Home() {
       },
     ]);
     //  console.log(`Botão - de ${name} clicado`);
+    // console.warn ou .error também são formas que ajudam a debugar via console.
   }
 
   return (
