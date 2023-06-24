@@ -10,7 +10,7 @@ import {
 import { Participant } from '../../components/Participant';
 
 import { styles } from './styles';
-import { ChangeEvent, useState } from 'react';
+import { useState } from 'react';
 
 export function Home() {
   const [participants, setParticipants] = useState<string[]>(['Lucas']);
